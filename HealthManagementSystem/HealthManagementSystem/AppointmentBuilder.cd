@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HealthManagementSystem.NewAppointment">
+    <Position X="10" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Director.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ab" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthManagementSystem.AppointmentBuilder">
+    <Position X="14.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAACBAAAAAAAAAEAABCAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppointmentBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthManagementSystem.ConcreteAppointmentBuilder">
+    <Position X="14.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAACBAAAAAAAAAEAAACAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Appointment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Appointment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthManagementSystem.Appointment">
+    <Position X="15" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAACAAAAEAAAAAAAABAAAAEABAAAAAAAAAQA=</HashCode>
+      <FileName>Appointment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="status" />
+      <Property Name="patient" />
+      <Property Name="doctor" />
+      <Property Name="bill" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthManagementSystem.Doctor">
+    <Position X="15" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAQAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Doctor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthManagementSystem.Patient">
+    <Position X="18.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAEAEAAAAQAAAAAEAAAAQQAAAAACAA=</HashCode>
+      <FileName>Patient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthManagementSystem.NormalBillingStrategy" BaseTypeListCollapsed="true">
+    <Position X="25.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthManagementSystem.DiscountBillingStrategy" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HealthManagementSystem.HealthcareFacility">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEAAAAAEAAAAAAAABAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>HealthcareFacility.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Database" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthManagementSystem.Database">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAEAEBAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="appointments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="HealthManagementSystem.Bill">
+    <Position X="18.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAUAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bill.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_billingStrategy" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="HealthManagementSystem.IBillingStrategy">
+    <Position X="24" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HealthManagementSystem.IPatient">
+    <Position X="18.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAEAAAAQAAAAAEAAAAQQAAAAACAA=</HashCode>
+      <FileName>Patient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HealthManagementSystem.IDoctor">
+    <Position X="15" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAQAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Doctor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HealthManagementSystem.IBill">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAUAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bill.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="HealthManagementSystem.AppointmentStatus">
+    <Position X="12" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppointmentStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

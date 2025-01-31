@@ -1,4 +1,4 @@
-# Care Facility Management System
+# Healthcare Facility Management System
 
 ## Overview
 
